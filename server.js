@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 var app = express();
 
 //middleware
-app.use(express.static("public"))
+app.use(express.static("public"));
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));

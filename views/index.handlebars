@@ -1,1 +1,14 @@
-<h1>hello world</h1>
+
+<div class="jumbotron">
+    <h2 class="text-center">Mongoose Scrapper</h2>
+</div>
+<div class="container">
+    <h3 class="text-center">NY Times Design Headlines and Links</h3>
+    <hr>
+    <div class="newsArticles">
+        {{#each dbData}}
+            <h5>{{this.title}} <a class="float-right" href={{this.link}}><i class="fas fa-link"></i></a></h5> 
+            <hr>
+        {{/each}}
+    </div>
+</div>
